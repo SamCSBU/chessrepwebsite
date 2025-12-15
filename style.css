@@ -93,3 +93,11 @@ img {
     text-align: center;
     
 }
+
+.profile-link {
+    text-decoration: none;
+    color: inherit;
+}
+.profile-link:hover {
+    text-decoration: underline;
+}
