@@ -101,3 +101,12 @@ img {
 .profile-link:hover {
     text-decoration: underline;
 }
+
+.winrate a {
+    text-decoration: none;
+    color: inherit;
+}
+.winrate a:hover {
+    text-decoration: underline;
+    color: inherit;
+}
