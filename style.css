@@ -26,21 +26,29 @@ img {
     margin: 0 auto;
 }
 nav {
-    text-align: center;
-    width: 100%;
+   text-align: center;
+   width: 100%;
 }
 nav a {
     font-size: 22px;
     font-weight: bold;
     color: rgb(255, 255, 255);
     text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 6px;
+    padding: 10px 18px;
+    border-radius: 20px;
     display: inline-block;
+    transition: all 0.3s ease;
 }
 
 nav a:hover {
     background: #0e8144;
+     transform: scale(1.05);
+}
+
+nav a.active {
+    background: #ffffff;
+    color: #0e8144;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
 .box a {
@@ -49,10 +57,15 @@ nav a:hover {
 }
 
 header {
-    background: #10591f;
+    background: linear-gradient(90deg, #10591f, #0e8144);
     height: 8vh;
     display: flex;
     align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 5px 0;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
 }
 .intro {
     font-size: 20px;
@@ -109,4 +122,12 @@ img {
 .winrate a:hover {
     text-decoration: underline;
     color: inherit;
+}
+
+.winrate {
+    font-size: 22px;
+}
+
+.winrate + h2 {
+    margin-top: 65px;
 }
