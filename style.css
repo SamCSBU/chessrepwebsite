@@ -14,12 +14,30 @@ body {
 
 .box {
     flex: 1;
-    padding: 5px
+    padding: 5px;
+}
+
+.box a {
+    margin: 10px;
+    font-size: 15px;
+}
+
+.box img {
+    border-radius: 10px;
+    border: 5px solid #000000;
 }
 
 h1, h2,h3, h4, p {
     text-align: center;
     color:#000000;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+h4 {
+    font-size: 18px;
 }
 img {
     display: block;
@@ -48,12 +66,7 @@ nav a:hover {
 nav a.active {
     background: #ffffff;
     color: #0e8144;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
-}
-
-.box a {
-    margin: 10px;
-    font-size: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
 }
 
 header {
@@ -71,22 +84,21 @@ header {
     font-size: 20px;
 }
 
-img {
-    border: 5px solid #000000;
-}
-
 .video {
-    font-size: 20px;
-    font-weight: bold;
-    color:#ffffff;
-    text-decoration: none;
-    border-radius: 3px;
-    padding: 10px 20px;
+    border-radius: 20px;
+    padding: 15px 20px;
     background: #05581a;
 }
 
+a.video {
+    font-size: 15px;
+    font-weight: bold;
+    color:#f6f6f6;
+    text-decoration: none;
+}
+
 .video:hover {
-    background: #353232;
+    background: #063212;
 }
 
 .stats-box {
@@ -129,5 +141,20 @@ img {
 }
 
 .winrate + h2 {
-    margin-top: 65px;
+    margin-top: 50px;
+}
+
+.box .rate {
+    border-radius: 10px;
+    border: 3px solid #000000;
+    margin-top: 10px;
+    width: 400px;
+}
+
+.board {
+    width: 400px;
+}
+
+.desc {
+    font-size: 20px;
 }
