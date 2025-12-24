@@ -1,11 +1,24 @@
+html {
+  min-height: 100%;
+  background: linear-gradient(180deg, #1a7a4d 0%, #0f4f35 100%);
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-    background-color: rgb(145, 172, 148);
     margin: 0;
     padding: 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+main {
+    flex: 1;
 }
 
 .row {
@@ -56,6 +69,7 @@ nav a {
     border-radius: 20px;
     display: inline-block;
     transition: all 0.3s ease;
+    margin: auto 5px;
 }
 
 nav a:hover {
@@ -70,15 +84,16 @@ nav a.active {
 }
 
 header {
-    background: linear-gradient(90deg, #10591f, #0e8144);
+    background: #0b4e31; 
+    box-shadow: 0 2px 10px rgba(0,0,0,0.35);
     height: 8vh;
     display: flex;
     align-items: center;
     position: sticky;
     top: 0;
     z-index: 1000;
-    padding: 5px 0;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    padding: 5px 0px;
+    
 }
 .intro {
     font-size: 20px;
@@ -87,7 +102,8 @@ header {
 .video {
     border-radius: 20px;
     padding: 15px 20px;
-    background: #05581a;
+    background: #0a7b27;
+    border: 2px solid #084716;
 }
 
 a.video {
@@ -98,7 +114,7 @@ a.video {
 }
 
 .video:hover {
-    background: #063212;
+    background: #0d6c27;
 }
 
 .stats-box {
@@ -119,11 +135,11 @@ a.video {
     
 }
 
-.profile-link {
+.link {
     text-decoration: none;
     color: inherit;
 }
-.profile-link:hover {
+.link:hover {
     text-decoration: underline;
 }
 
@@ -157,4 +173,40 @@ a.video {
 
 .desc {
     font-size: 20px;
+}
+
+.email {
+    text-decoration: none;
+    color: rgb(183, 184, 180);
+}
+.email:hover {
+    text-decoration: underline;
+}
+
+.contact {
+    font-size: 20px;
+}
+
+footer {
+  padding: 20px 0;
+}
+
+footer p {
+    color: #8f8f8f;
+    font-size: 15px;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+#twitch {
+    width: 25px;
+}
+
+#discord {
+    width: 28px;
 }

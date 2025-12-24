@@ -10,12 +10,12 @@
     gtag('config', 'G-K0VGYD82J4');
     </script>
     <meta charset = "UTF-8">
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
-    <title> EpicWolves' Chess Repertoire</title>
+    <title>Home Page</title>
     <link rel="stylesheet" href="style.css">
  </head>
 <body>
@@ -25,9 +25,11 @@
   <a href="white.html">White</a>
   <a href="black.html">Black</a>
   <a href="winrates.html">Win Rates</a>
+  <a href="contact.html">Contact Me</a>
 </nav>
 </header>
-    <h1>Samuel Halsbands' Chess Repertoire</h1>
+<main>
+    <h1>EpicWolves' Chess Repertoire</h1>
     <h2>I am a 2100-2200+ Rapid and Blitz player who started playing on Chess.com in December of 2020.</h2>
     <div class = "row">
         <div class = "box">
@@ -43,7 +45,7 @@
             </figure>
         </div>
     </div>
-    <p class = "intro">I am happy to present my opening repertoire that has pushed me into the top 0.1% of online players, <br> and provide links to videos that I watched to learn these openings.</p>
+    <p class = "intro">I am happy to present my opening repertoire that pushed into the top 0.1% of online players within one year <br> of playing chess, and provide links to videos that I watched to learn these openings.</p>
 
     <div id="chess-stats" class="stats-box">
     Loading live Chess.com ratings...
@@ -58,9 +60,9 @@ fetch("https://api.chess.com/pub/player/epicwolves/stats")
     
     document.getElementById("chess-stats").innerHTML = `
       <h2>My Live Chess.com Ratings</h2>
-      <p><a class = "profile-link" href = "https://www.chess.com/member/epicwolves/stats/rapid" target = "_blank"><strong>Rapid:</strong> ${rapid}</a></p> 
-      <p><a class = "profile-link" href = "https://www.chess.com/member/epicwolves/stats/blitz" target = "_blank"><strong>Blitz:</strong> ${blitz}</a></p> 
-      <p><a class = "profile-link" href = "https://www.chess.com/member/epicwolves/stats/bullet" target = "_blank"><strong>Bullet:</strong> ${bullet}</a></p>
+      <p><a class = "link" href = "https://www.chess.com/member/epicwolves/stats/rapid" target = "_blank"><strong>Rapid:</strong> ${rapid}</a></p> 
+      <p><a class = "link" href = "https://www.chess.com/member/epicwolves/stats/blitz" target = "_blank"><strong>Blitz:</strong> ${blitz}</a></p> 
+      <p><a class = "link" href = "https://www.chess.com/member/epicwolves/stats/bullet" target = "_blank"><strong>Bullet:</strong> ${bullet}</a></p>
     `;
   })
   .catch(err => {
@@ -68,6 +70,14 @@ fetch("https://api.chess.com/pub/player/epicwolves/stats")
       "Unable to load live stats.";
   });
 </script>
-
+</main>
+<footer>
+  <p>Chess Opening Repertoire and Coaching | <a href = "contact.html" class = "link">Contact Me</a></p>
+  <p>EpicWolves © 2025</p>
+  <div class = "socials">
+  <a href = "https://www.twitch.tv/epicwolveschess" target ="_blank"><img src = "images/twitchicon.png" alt = "Twitch icon" id = "twitch"></a>
+  <a href = "https://discord.com/users/504799540172554260" target ="_blank"><img src = "images/discordicon.png" alt = "Discord icon" id = "discord"></a>
+  </div>
+</footer>
 </body>
 </html>
